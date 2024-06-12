@@ -4,7 +4,16 @@ import React from "react";
 const Roadmap = () => {
 
     return (
-        <section id="roadmap" className="mt-32 mx-2 md:mx-20">
+        <section
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="700"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true" 
+            id="roadmap" 
+            className="mt-32 mx-2 md:mx-20"
+        >
             <div className="">
                 <div className="title">
                     <h2 className="md:text-6xl text-3xl text-center text-white">Roadmap</h2>

@@ -1,15 +1,22 @@
 "use client"
+import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { IconCloudDemo } from "@/components/share/iconsCircle";
 import Globe from "@/components/magicui/globe";
 import Tokenomics from "@/components/main/tokenomics";
 import { useTheme } from "next-themes";
+import AOS from "aos";
 import FAQ from "@/components/main/faq";
 import Roadmap from "@/components/main/roadmap";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
+
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
+
   // return (
   //   <main className="dark:bg-[#0C111E] pt-20">
   //     <div className="grid grid-cols-1 relative md:grid-cols-2 mx-5 lg:mx-20 md:mx-20 xl:mx-40 items-center">
@@ -56,7 +63,15 @@ export default function Home() {
         <h1 className="mb-5 text-center text-3xl">
           MEET RICHY SOONAK
         </h1>
-        <p className="text-justify">
+        <p
+          className="text-justify"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="100"
+          data-aos-duration="700"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
           At Richy Soonak, we’re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
         </p>
       </div>
@@ -70,7 +85,16 @@ export default function Home() {
         <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">SOON</h1>
       </div> */}
 
-      <div id="joinus" className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+      <div 
+        id="joinus" 
+        className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true" 
+      >
         <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
         <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
           Connect with fellow DeFi farmers and cultivate collective growth in a harmonious ecosystem.
@@ -88,7 +112,16 @@ export default function Home() {
       </div>
 
 
-      <div id="howtobuy" className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+      <div 
+        id="howtobuy" 
+        className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
         <h2 className="text-2xl md:text-5xl text-yellow-300">How To Buy</h2>
         {/* <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
           Visit our Tutorial to buy $soonak
@@ -114,7 +147,16 @@ export default function Home() {
         <FAQ/>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10">
+      <div 
+        className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10"
+      
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="100"
+        data-aos-duration="700"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+      >
         <div className="text-center md:text-left">
           <h1 className="text-3xl md:text-5xl text-yellow-200">Dashboard, Yield Strategy and Analytics</h1>
           <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>

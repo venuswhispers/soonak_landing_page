@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import Header from "@/components/layout/header";
 import Provider from '@/providers';
 import "./globals.css";
+import "aos/dist/aos.css";
 import "./index.css";
 
 
