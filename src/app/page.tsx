@@ -7,11 +7,13 @@ import Globe from "@/components/magicui/globe";
 import Tokenomics from "@/components/main/tokenomics";
 import { useTheme } from "next-themes";
 import AOS from "aos";
+import ReactPlayer from "react-player";
 import FAQ from "@/components/main/faq";
 import Roadmap from "@/components/main/roadmap";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
+  const [showPlayer, setShowPlayer] = React.useState<boolean>(false);
 
   React.useEffect(() => {
     AOS.init();
@@ -75,7 +77,7 @@ export default function Home() {
           At Richy Soonak, we’re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
         </p>
       </div>
-      <Tokenomics/>
+      <Tokenomics />
 
       <Roadmap />
 
@@ -85,15 +87,15 @@ export default function Home() {
         <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">SOON</h1>
       </div> */}
 
-      <div 
-        id="joinus" 
+      <div
+        id="joinus"
         className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="100"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
-        data-aos-once="true" 
+        data-aos-once="true"
       >
         <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
         <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
@@ -102,18 +104,18 @@ export default function Home() {
         <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
           <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
             Twitter&nbsp;&nbsp;&nbsp;&nbsp;
-            <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl"/>
+            <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
           </a>
           <a href="https://t.me/richysoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
             Telegram
-            <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl"/>
+            <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
           </a>
         </div>
       </div>
 
 
-      <div 
-        id="howtobuy" 
+      <div
+        id="howtobuy"
         className="!font-sans text-center w-full mt-[50px] md:mt-[200px]"
         data-aos="fade-right"
         data-aos-offset="200"
@@ -127,29 +129,63 @@ export default function Home() {
           Visit our Tutorial to buy $soonak
         </a> */}
         <div className="w-full px-5 relative p-1 py-10 brounded-2xl flex items-center justify-center">
-          <Image 
-            src={"/how.png"} 
+          <Image
+            src={"/how.png"}
             height={0}
             width={0}
             sizes="100vw"
             alt="how to buy"
-            className="rounded-xl aspect-video w-full md:w-2/3 lg:w-1/2" 
+            className="rounded-xl w-full md:w-2/3 lg:w-1/2 aspect-video"
           />
-          <div className="flex justify-center items-center absolute aspect-[3/1] rounded-2xl bg-[#00000079] p-2 md:p-5">
-            <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="flex items-center justify-center">
-              <Icon icon="fluent:play-12-regular" className="text-7xl text-white cursor-pointer opacity-60 hover:opacity-100"/>
+          {/* <ReactPlayer
+              controls
+              // url={'https://www.youtube.com/watch?v=To6mgsB2VPo'}
+              url={'/a.mp4'}
+              width="100%"
+              height="100%"
+              playing={true}
+              className="w-full h-full rounded-xl"
+            /> */}
+          <div className="flex justify-center items-center absolute w-2/3 md:w-1/2 lg:w-1/4 aspect-[3/1] rounded-2xl bg-[#00000079] px-[2.5%] py-[2.5%]">
+            <Icon onClick={() => setShowPlayer(true)} icon="fluent:play-12-regular" className="w-1/2 h-full text-white cursor-pointer opacity-60 hover:opacity-100" />
+            <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="w-1/2 h-full flex items-center justify-center">
+              <Icon icon="humbleicons:external-link" className="w-1/2 h-full text-white cursor-pointer opacity-60 hover:opacity-100" />
             </a>
           </div>
         </div>
       </div>
 
+      {
+        showPlayer &&
+        <div className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-50">
+        <div onClick={() => setShowPlayer(false)} className="fixed top-0 left-0 right-0 bottom-0 bg-[#000000a2]"></div>
+        <div className="flex justify-center w-full">
+          <div className="relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+            <div className="absolute right-1 top-1 -z-1 w-[200px] h-20 rounded-2xl bg-[#ec4040]"></div>
+            <div className="w-full flex flex-col rounded-2xl h-full clip bg-[#1F193E] px-6 pt-10 pb-2 rounded-tr-[55px] border-b border-white]">
+              <ReactPlayer
+                controls
+                url={'https://www.youtube.com/watch?v=To6mgsB2VPo'}
+                playing={true}
+                width='100%'
+                className="rounded-xl w-full aspect-video"
+              />
+              <h1 className="text-white text-[16px] mt-2">
+                How To Buy
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      }
+
       <div className="md:mt-[150px]">
-        <FAQ/>
+        <FAQ />
       </div>
 
-      <div 
+      <div
         className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10"
-      
+
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="100"
@@ -162,18 +198,18 @@ export default function Home() {
           <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
           <div className="flex gap-1 pt-2 justify-center md:justify-start">
             <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl"/>
+              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
             </a>
             <a href="https://discord.gg/Vp9mR8gP" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="ri:discord-line" className="text-xl sm:text-4xl"/>
+              <Icon icon="ri:discord-line" className="text-xl sm:text-4xl" />
             </a>
             <a href="https://github.com/Richy-Soonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="ri:github-fill" className="text-xl sm:text-4xl"/>
+              <Icon icon="ri:github-fill" className="text-xl sm:text-4xl" />
             </a>
           </div>
         </div>
         <div className="w-full pl-0 lg:pl-40 flex justify-center">
-          <Image 
+          <Image
             src={'/earth.svg'}
             width={0}
             height={0}
@@ -187,3 +223,5 @@ export default function Home() {
     </main>
   );
 }
+
+

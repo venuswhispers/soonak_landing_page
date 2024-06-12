@@ -20,7 +20,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
-    "react-icon-cloud": "^4.1.4"
+    "react-icon-cloud": "^4.1.4",
+    "react-player": "^2.16.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
