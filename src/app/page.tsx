@@ -84,6 +84,16 @@ export default function Home() {
         </div>
       </div>
 
+
+      <div className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+        <h2 className="text-2xl md:text-5xl text-yellow-300">How To Buy</h2>
+        <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
+          Visit our Tutorial to buy $soonak
+        </a>
+      </div>
+
+
+
       <div className="mt-[50px] md:mt-[150px]">
         <FAQ/>
       </div>

@@ -15,19 +15,19 @@ const Tokenomics = () => {
         const radius = 175; // Adjust the radius
         const strokeWidth = 60; // Adjust the stroke width
         const borderThickness = 2; // Adjust the border thickness
-        const parts = [12.5, 17.5, 10, 5, 5, 5, 10, 5, 30]; // Adjust the values
+        const parts = [90, 10]; // Adjust the values
         const total = parts.reduce((acc, val) => acc + val, 0);
         const gap = 0.05; // Adjust the gap between parts
         const colors = [
             "#EFB1EA", //pink
             "#F15A29", // orange
-            "#662A75", //violet
-            "#3E2274", //blue
-            "#D1B4FF", //light gray
-            "#42C7E8", //sky
-            "#C56D74", // dark orange
-            "#CB0A16", //red
-            "#42C7E8", //sky
+            // "#662A75", //violet
+            // "#3E2274", //blue
+            // "#D1B4FF", //light gray
+            // "#42C7E8", //sky
+            // "#C56D74", // dark orange
+            // "#CB0A16", //red
+            // "#42C7E8", //sky
         ]; // Updated colors array
 
         let startAngle = -Math.PI / 2;
@@ -61,7 +61,7 @@ const Tokenomics = () => {
                     <h2 className="md:text-6xl text-3xl text-center dark:text-white text-green-800">TOKENOMICS</h2>
                 </div>
                 <div className="donut-chart-bg bg-[#D95617]">
-                    <div className="donut-chart-ui">
+                    <div className="donut-chart-ui items-center">
                         <div
                             className="left-list"
                             data-aos="fade-right"
@@ -73,20 +73,8 @@ const Tokenomics = () => {
                         >
                             <ul id="legendLeft">
                                 <li>
-                                    <span className="number">12.5%</span>
-                                    <span className="text">tier1 private sale</span>
-                                </li>
-                                <li>
-                                    <span className="number">17.5%</span>
-                                    <span className="text">tier2 private sale</span>
-                                </li>
-                                <li>
                                     <span className="number">10%</span>
-                                    <span className="text">AI Pepe holders airdrop</span>
-                                </li>
-                                <li>
-                                    <span className="number">5%</span>
-                                    <span className="text">team (vested)</span>
+                                    <span className="text">Dev Wallet</span>
                                 </li>
                             </ul>
                         </div>
@@ -115,20 +103,8 @@ const Tokenomics = () => {
                         >
                             <ul id="legendRight">
                                 <li>
-                                    <span className="number">5%</span>
-                                    <span className="text">advisors</span>
-                                </li>
-                                <li>
-                                    <span className="number">5%</span>
-                                    <span className="text">market making</span>
-                                </li>
-                                <li>
-                                    <span className="number">10%</span>
-                                    <span className="text">Marketing</span>
-                                </li>
-                                <li>
-                                    <span className="number">5%, 30%</span>
-                                    <span className="text">CEX & Liquidity Provider</span>
+                                    <span className="number">90%</span>
+                                    <span className="text">Locked Liquidity</span>
                                 </li>
                             </ul>
                         </div>
