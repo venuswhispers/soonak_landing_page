@@ -69,7 +69,7 @@ export default function Home() {
 
       <div className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
         <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
-        <h3 className="!font-sans text-2xl font-bold dark:text-white text-black mt-10">
+        <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
           Connect with fellow DeFi farmers and cultivate collective growth in a harmonious ecosystem.
         </h3>
         <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
@@ -91,7 +91,18 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10">
         <div className="text-center md:text-left">
           <h1 className="text-3xl md:text-5xl text-yellow-200">Dashboard, Yield Strategy and Analytics</h1>
-          <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl dark:text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
+          <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
+          <div className="flex gap-1 pt-2 justify-center md:justify-start">
+            <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl"/>
+            </a>
+            <a href="https://discord.gg/Vp9mR8gP" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <Icon icon="ri:discord-line" className="text-xl sm:text-4xl"/>
+            </a>
+            <a href="https://github.com/Richy-Soonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+              <Icon icon="ri:github-fill" className="text-xl sm:text-4xl"/>
+            </a>
+          </div>
         </div>
         <div className="w-full pl-0 lg:pl-40 flex justify-center">
           <Image 
@@ -104,7 +115,7 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="text-center text-white mt-[50px] text-2xl py-10">Copyright © 2023 CHOPSUI. All rights reserved</div>
+      <div className="text-center text-white mt-[50px] text-lg sm:text-2xl py-10">Copyright © 2023 CHOPSUI. All rights reserved</div>
     </main>
   );
 }
