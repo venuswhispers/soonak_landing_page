@@ -1,113 +1,110 @@
+"use client"
 import Image from "next/image";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { IconCloudDemo } from "@/components/share/iconsCircle";
+import Globe from "@/components/magicui/globe";
+import Tokenomics from "@/components/main/tokenomics";
+import { useTheme } from "next-themes";
+import FAQ from "@/components/main/faq";
 
 export default function Home() {
+  const { theme, setTheme } = useTheme();
+  // return (
+  //   <main className="dark:bg-[#0C111E] pt-20">
+  //     <div className="grid grid-cols-1 relative md:grid-cols-2 mx-5 lg:mx-20 md:mx-20 xl:mx-40 items-center">
+  //       <div className="dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10">
+  //         <h1 className="font-extrabold mb-5 text-3xl md:text-5xl">
+  //           MEET RICHY SOONAK
+  //         </h1>
+  //         <p className="text-justify">
+  //           At Richy Soonak, we’re not just another meme coin – we’re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
+  //         </p>
+  //       </div>
+  //       <div className="relative flex justify-center">
+  //         <Icon icon="arcticons:hauk" className="absolute right-0 dark:text-white w-[60px] lg:w-[100px] xl:w-[150px] h-auto" />
+  //         <Image
+  //           src='/logo-left.png'
+  //           alt='asdf'
+  //           sizes='100vw'
+  //           height={0}
+  //           width={0}
+  //           className='rounded-full w-3/4 md:w-full lg:w-3/4 xl:w-2/3'
+  //         />
+  //       </div>
+  //       {/* <div className="opacity-5 absolute w-[90%] top-0"><IconCloudDemo/></div> */}
+  //     </div>
+  //     {/* <Globe /> */}
+  //     <div className="w-full flex justify-center"><Tokenomics/></div>
+
+  //   </main>
+  // );
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+    <main className="dark:bg-[#01095A] bg-[#9e9faa]">
+      <div className="bg-[url('/back_light.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back_dark.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
+        <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10 pr-20 !font-cat">
+          <h1 className="mb-5 md:text-3xl lg:text-5xl">
+            MEET RICHY SOONAK
+          </h1>
+          <p className="text-justify">
+            At Richy Soonak, we’re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
+          </p>
+        </div>
+      </div>
+      <div className="mt-10 md:hidden dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10 px-5 !font-cat">
+        <h1 className="mb-5 text-center text-3xl">
+          MEET RICHY SOONAK
+        </h1>
+        <p className="text-justify">
+          At Richy Soonak, we’re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+      </div>
+      <Tokenomics/>
+
+      {/* <div className="text-center mt-[300px]">
+        <h1 className="text-white text-5xl">STAKING IS</h1>
+        <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">COMING</h1>
+        <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">SOON</h1>
+      </div> */}
+
+      <div className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+        <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
+        <h3 className="!font-sans text-2xl font-bold dark:text-white text-black mt-10">
+          Connect with fellow DeFi farmers and cultivate collective growth in a harmonious ecosystem.
+        </h3>
+        <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
+          <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+            Twitter&nbsp;&nbsp;&nbsp;&nbsp;
+            <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl"/>
+          </a>
+          <a href="https://t.me/richysoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+            Telegram
+            <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl"/>
           </a>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mt-[50px] md:mt-[150px]">
+        <FAQ/>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10">
+        <div className="text-center md:text-left">
+          <h1 className="text-3xl md:text-5xl text-yellow-200">Dashboard, Yield Strategy and Analytics</h1>
+          <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl dark:text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
+        </div>
+        <div className="w-full pl-0 lg:pl-40 flex justify-center">
+          <Image 
+            src={'/earth.svg'}
+            width={0}
+            height={0}
+            alt="a"
+            sizes="100vw"
+            className="w-2/3 md:w-full aspect-square"
+          />
+        </div>
       </div>
+      <div className="text-center text-white mt-[50px] text-2xl py-10">Copyright © 2023 CHOPSUI. All rights reserved</div>
     </main>
   );
 }
