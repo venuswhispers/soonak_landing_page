@@ -90,12 +90,27 @@ export default function Home() {
 
       <div id="howtobuy" className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
         <h2 className="text-2xl md:text-5xl text-yellow-300">How To Buy</h2>
-        <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
+        {/* <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
           Visit our Tutorial to buy $soonak
-        </a>
+        </a> */}
+        <div className="w-full px-5 relative p-1 py-10 brounded-2xl flex items-center justify-center">
+          <Image 
+            src={"/how.png"} 
+            height={0}
+            width={0}
+            sizes="100vw"
+            alt="how to buy"
+            className="rounded-xl aspect-video w-full md:w-2/3 lg:w-1/2" 
+          />
+          <div className="flex justify-center items-center absolute aspect-[3/1] rounded-2xl bg-[#00000079] p-2 md:p-5">
+            <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="flex items-center justify-center">
+              <Icon icon="fluent:play-12-regular" className="text-7xl text-white cursor-pointer opacity-60 hover:opacity-100"/>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div className="mt-[50px] md:mt-[150px]">
+      <div className="md:mt-[150px]">
         <FAQ/>
       </div>
 

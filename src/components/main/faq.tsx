@@ -24,8 +24,6 @@ const faqs: FAQ[] = [
 
 const FAQ = () => {
 
-
-
   return (
     <section id="faq" className="section-faq p-left p-right !font-cat">
       <div className="container5 align-middle">
