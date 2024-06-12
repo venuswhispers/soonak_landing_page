@@ -55,12 +55,12 @@ const Tokenomics = () => {
     }, [progress]);
 
     return (
-        <section className="mt-20 mx-2 md:mx-20">
+        <section id="tokenomics" className="mt-20 mx-2 md:mx-20">
             <div className="">
                 <div className="title">
-                    <h2 className="md:text-6xl text-3xl text-center dark:text-white text-green-800">TOKENOMICS</h2>
+                    <h2 className="md:text-6xl text-3xl text-center text-white">TOKENOMICS</h2>
                 </div>
-                <div className="donut-chart-bg bg-[#D95617]">
+                <div className="donut-chart-bg dark:bg-[#D95617]">
                     <div className="donut-chart-ui items-center">
                         <div>
                             <ul id="legendLeft">

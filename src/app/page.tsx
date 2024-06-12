@@ -70,7 +70,7 @@ export default function Home() {
         <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">SOON</h1>
       </div> */}
 
-      <div className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+      <div id="joinus" className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
         <h2 className="text-2xl md:text-5xl text-yellow-300">Join Our Community</h2>
         <h3 className="!font-sans text-2xl font-bold dark:text-white text-white mt-10">
           Connect with fellow DeFi farmers and cultivate collective growth in a harmonious ecosystem.
@@ -88,7 +88,7 @@ export default function Home() {
       </div>
 
 
-      <div className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
+      <div id="howtobuy" className="!font-sans text-center w-full mt-[50px] md:mt-[200px]">
         <h2 className="text-2xl md:text-5xl text-yellow-300">How To Buy</h2>
         <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
           Visit our Tutorial to buy $soonak

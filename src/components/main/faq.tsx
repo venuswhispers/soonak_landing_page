@@ -27,7 +27,7 @@ const FAQ = () => {
 
 
   return (
-    <section className="section-faq p-left p-right !font-cat">
+    <section id="faq" className="section-faq p-left p-right !font-cat">
       <div className="container5 align-middle">
         <h2
           className="heading text-white text-center md:text-left w-full md:w-auto"
