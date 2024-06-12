@@ -6,6 +6,7 @@ import Globe from "@/components/magicui/globe";
 import Tokenomics from "@/components/main/tokenomics";
 import { useTheme } from "next-themes";
 import FAQ from "@/components/main/faq";
+import Roadmap from "@/components/main/roadmap";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -61,6 +62,8 @@ export default function Home() {
       </div>
       <Tokenomics/>
 
+      <Roadmap />
+
       {/* <div className="text-center mt-[300px]">
         <h1 className="text-white text-5xl">STAKING IS</h1>
         <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">COMING</h1>
@@ -91,8 +94,6 @@ export default function Home() {
           Visit our Tutorial to buy $soonak
         </a>
       </div>
-
-
 
       <div className="mt-[50px] md:mt-[150px]">
         <FAQ/>

@@ -62,15 +62,7 @@ const Tokenomics = () => {
                 </div>
                 <div className="donut-chart-bg bg-[#D95617]">
                     <div className="donut-chart-ui items-center">
-                        <div
-                            className="left-list"
-                            data-aos="fade-right"
-                            data-aos-offset="200"
-                            data-aos-delay="200"
-                            data-aos-duration="500"
-                            data-aos-easing="ease-in-out"
-                            data-aos-once="true"
-                        >
+                        <div>
                             <ul id="legendLeft">
                                 <li>
                                     <span className="number">10%</span>

@@ -15,6 +15,9 @@ const config: Config = {
       fontFamily: {
         cat: ["var(--font-cat)"],
       },
+      screens: {
+        'xl': '1440px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
