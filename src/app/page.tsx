@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="dark:bg-[#01095A] bg-[#9e9faa]">
+    <main className="dark:bg-[#01095A] bg-[#a35ed4d2]">
       <div className="bg-[url('/back_light.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back_dark.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
         <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
           <h1 className="mb-5 md:text-4xl lg:text-6xl font-snow font-bold">
