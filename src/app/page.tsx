@@ -158,7 +158,7 @@ export default function Home() {
       >
         <div className="text-center md:text-left">
           <h1 className="text-3xl md:text-5xl text-yellow-200">Dashboard, Yield Strategy and Analytics</h1>
-          <p className="!font-sans mt-10 font-bold text-2xl md:text-4xl text-white ">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
+          <p className="mt-10 font-bold text-2xl md:text-4xl text-white font-rushna">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
           <div className="flex gap-1 pt-2 justify-center md:justify-start">
             <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
               <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
