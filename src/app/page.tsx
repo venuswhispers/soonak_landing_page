@@ -19,50 +19,20 @@ export default function Home() {
     AOS.init();
   }, []);
 
-  // return (
-  //   <main className="dark:bg-[#0C111E] pt-20">
-  //     <div className="grid grid-cols-1 relative md:grid-cols-2 mx-5 lg:mx-20 md:mx-20 xl:mx-40 items-center">
-  //       <div className="dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10">
-  //         <h1 className="font-extrabold mb-5 text-3xl md:text-5xl">
-  //           MEET RICHY SOONAK
-  //         </h1>
-  //         <p className="text-justify">
-  //           At Richy Soonak, we’re not just another meme coin – we’re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
-  //         </p>
-  //       </div>
-  //       <div className="relative flex justify-center">
-  //         <Icon icon="arcticons:hauk" className="absolute right-0 dark:text-white w-[60px] lg:w-[100px] xl:w-[150px] h-auto" />
-  //         <Image
-  //           src='/logo-left.png'
-  //           alt='asdf'
-  //           sizes='100vw'
-  //           height={0}
-  //           width={0}
-  //           className='rounded-full w-3/4 md:w-full lg:w-3/4 xl:w-2/3'
-  //         />
-  //       </div>
-  //       {/* <div className="opacity-5 absolute w-[90%] top-0"><IconCloudDemo/></div> */}
-  //     </div>
-  //     {/* <Globe /> */}
-  //     <div className="w-full flex justify-center"><Tokenomics/></div>
-
-  //   </main>
-  // );
-
   return (
     <main className="dark:bg-[#01095A] bg-[#9e9faa]">
       <div className="bg-[url('/back_light.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back_dark.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
-        <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10 pr-20 !font-cat">
-          <h1 className="mb-5 md:text-3xl lg:text-5xl">
+        <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
+          <h1 className="mb-5 md:text-4xl lg:text-6xl font-snow font-bold">
             MEET RICHY SOONAK
           </h1>
-          <p className="text-justify">
-            At Richy Soonak, we’re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
+          <p className="text-justify font-rushda">
+            At Richy Soonak, we&apos;re not just another meme coin – we&apos;re the Ministry of Silly Coins! Harnessing the whimsical power of Solana, we bring you a crypto experience so absurd, it should come with a laugh track. Our jolly good team of blockchain boffins will guide you through this madcap adventure, ensuring you navigate the meme coin carnival with the grace of a British bulldog in a bowler hat. Ready for a financial farce? Dive into the Richy Soonak revolution today – Richy wants to send people to Rwanda, we want to send Richy to the moon.
           </p>
         </div>
       </div>
-      <div className="mt-10 md:hidden dark:text-white text-lg leading-6 lg:text-xl xl:text-2xl lg:leading-10 px-5 !font-cat">
-        <h1 className="mb-5 text-center text-3xl">
+      <div className="mt-10 md:hidden dark:text-white text-2xl leading-10 lg:text-3xl xl:text-4xl lg:leading-10 px-3">
+        <h1 className="mb-5 text-center text-3xl md:text-4xl lg:text-6xl font-snow font-extrabold">
           MEET RICHY SOONAK
         </h1>
         <p
@@ -78,14 +48,7 @@ export default function Home() {
         </p>
       </div>
       <Tokenomics />
-
       <Roadmap />
-
-      {/* <div className="text-center mt-[300px]">
-        <h1 className="text-white text-5xl">STAKING IS</h1>
-        <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">COMING</h1>
-        <h1 className="text-[#F69A3A] text-7xl mt-3 tracking-[20px]">SOON</h1>
-      </div> */}
 
       <div
         id="joinus"

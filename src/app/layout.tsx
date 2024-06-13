@@ -18,6 +18,31 @@ const catFont = localFont({
   ],
   variable: "--font-cat",
 });
+const dalekFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/DalekPinpointBold.ttf",
+    },
+  ],
+  variable: "--font-dalek",
+});
+const rushdaFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/RushdaFunky-mGRv.otf",
+    },
+  ],
+  variable: "--font-rushna",
+});
+const snowFont = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Snowflake.woff",
+    },
+  ],
+  variable: "--font-snow",
+});
+
 
 export const metadata: Metadata = {
   title: "Richy Soonak",
@@ -39,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning={true} className={`${catFont.variable}`}>
+    <html lang="en" suppressHydrationWarning={true} className={`${catFont.variable} ${dalekFont.variable} ${rushdaFont.variable} ${snowFont.variable}`}>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Provider>
           <Header />

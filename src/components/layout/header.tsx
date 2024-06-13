@@ -29,11 +29,11 @@ const Header = () => {
                     className='rounded-full'
                 />
                 <div className='hidden md:flex gap-3 lg:gap-10 justify-center items-center'>
-                    <a href='#roadmap' className='text-white text-[16px] lg:text-xl'>ROADMP</a>
-                    <a href='#tokenomics' className='text-white text-[16px] lg:text-xl'>TOKENOMICS</a>
-                    <a href='#howtobuy' className='text-white text-[16px] lg:text-xl'>HOW TO BUY</a>
-                    <a href='#joinus' className='text-white text-[16px] lg:text-xl'>JOIN US</a>
-                    <a href='#faq' className='text-white text-[16px] lg:text-xl'>FAQ</a>
+                    <a href='#roadmap' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ROADMP</a>
+                    <a href='#tokenomics' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>TOKENOMICS</a>
+                    <a href='#howtobuy' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>HOW TO BUY</a>
+                    <a href='#joinus' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>JOIN US</a>
+                    <a href='#faq' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>FAQ</a>
                 </div>
                 <div className='flex justify-center items-center gap-2 sm:gap-5'>
                     <a href='https://raydium.io/swap/?inputMint=H218TQViAXsSqwCLnf7L41zewUTRmdN1r4neLtjBXYXS&outputMint=sol' target='_blank' className='rounded-xl bg-blue-600 px-5 py-3 text-white hover:text-black'>BUY NOW</a>
@@ -44,11 +44,11 @@ const Header = () => {
                 {
                     show &&
                     <div className='absolute flex flex-col top-full w-full md:!hidden gap-3 justify-center items-center'>
-                        <a href='#roadmap' className='text-white text-[16px] lg:text-xl'>ROADMP</a>
-                        <a href='#tokenomics' className='text-white text-[16px] lg:text-xl'>TOKENOMICS</a>
-                        <a href='#howtobuy' className='text-white text-[16px] lg:text-xl'>HOW TO BUY</a>
-                        <a href='#joinus' className='text-white text-[16px] lg:text-xl'>JOIN US</a>
-                        <a href='#faq' className='text-white text-[16px] lg:text-xl'>FAQ</a>
+                        <a href='#roadmap' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ROADMP</a>
+                        <a href='#tokenomics' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>TOKENOMICS</a>
+                        <a href='#howtobuy' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>HOW TO BUY</a>
+                        <a href='#joinus' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>JOIN US</a>
+                        <a href='#faq' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>FAQ</a>
                     </div>
                 }
             </div>

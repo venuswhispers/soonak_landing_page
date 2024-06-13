@@ -14,6 +14,9 @@ const config: Config = {
     extend: {
       fontFamily: {
         cat: ["var(--font-cat)"],
+        dalek: ["var(--font-dalek)"],
+        rushda: ["var(--font-rushna)"],
+        snow: ["var(--font-snow)"],
       },
       screens: {
         'xl': '1440px',

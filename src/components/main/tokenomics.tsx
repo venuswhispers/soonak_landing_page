@@ -65,8 +65,8 @@ const Tokenomics = () => {
                         <div>
                             <ul id="legendLeft">
                                 <li>
-                                    <span className="number">10%</span>
-                                    <span className="text">Dev Wallet</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white number">10%</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white">Dev Wallet</span>
                                 </li>
                             </ul>
                         </div>
@@ -95,8 +95,8 @@ const Tokenomics = () => {
                         >
                             <ul id="legendRight">
                                 <li>
-                                    <span className="number">90%</span>
-                                    <span className="text">Locked Liquidity</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white number">90%</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white">Locked Liquidity</span>
                                 </li>
                             </ul>
                         </div>

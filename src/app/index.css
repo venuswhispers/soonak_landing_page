@@ -118,7 +118,7 @@ video {
     padding: 0;
     border: 0;
     vertical-align: baseline;
-    font-family: var(--font-cat);
+    font-family: var(--font-snow);
 }
 
 article,
@@ -1599,7 +1599,7 @@ video {
     padding: 0;
     border: 0;
     vertical-align: baseline;
-    font-family: var(--font-cat);
+    font-family: var(--font-snow);
 }
 
 article,
