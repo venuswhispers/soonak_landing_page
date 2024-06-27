@@ -20,6 +20,7 @@ const config: Config = {
       },
       screens: {
         'xl': '1440px',
+        'w1300': '1300px',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

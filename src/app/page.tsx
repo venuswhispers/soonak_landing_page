@@ -2,25 +2,32 @@
 import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import { IconCloudDemo } from "@/components/share/iconsCircle";
-import Globe from "@/components/magicui/globe";
 import Tokenomics from "@/components/main/tokenomics";
 import { useTheme } from "next-themes";
 import AOS from "aos";
 import ReactPlayer from "react-player";
 import FAQ from "@/components/main/faq";
 import Roadmap from "@/components/main/roadmap";
+import Team from "@/components/main/team";
+import PlayList from "@/components/main/playlist";
+
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
   const [showPlayer, setShowPlayer] = React.useState<boolean>(false);
+  const [movie, setMovie] = React.useState<{ title: string, url: string }>({title: '', url: ''});
+
+  const showMovie = (title: string, url: string) => {
+    setMovie ({ title, url });
+    setShowPlayer (true);
+  }
 
   React.useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <main className="dark:bg-[#01095A] bg-[#a35ed4d2]">
+    <main className="dark:bg-[#0d0a1cfa] bg-[#a35ed4d2]">
       <div className="bg-[url('/back_light.jpg')] bg-[length:1000px] bg-no-repeat dark:bg-[url('/back_dark.jpg')] md:bg-cover w-full h-[600px] md:h-screen md:bg-left bg-main flex justify-end items-center">
         <div className="hidden md:block md:w-1/2 text-green-800 dark:text-white text-2xl leading-6 lg:text-3xl xl:text-4xl lg:leading-10 pr-20">
           <h1 className="mb-5 md:text-4xl lg:text-6xl font-snow font-bold">
@@ -66,15 +73,21 @@ export default function Home() {
         </h3>
         <div className="flex justify-center gap-5 !font-sans font-bold text-sm  sm:text-2xl mt-10">
           <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-            Twitter&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className="hidden md:inline">Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
           </a>
           <a href="https://t.me/richysoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-            Telegram
+            <span className="hidden md:inline">Telegram</span>
             <Icon icon="teenyicons:telegram-outline" className="text-xl sm:text-4xl" />
+          </a>
+          <a href="https://www.tiktok.com/@richysoonakcoin" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
+            <span className="hidden md:inline">Tiktok&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <Icon icon="simple-icons:tiktok" className="text-xl sm:text-4xl" />
           </a>
         </div>
       </div>
+
+      <Team/>
 
 
       <div
@@ -88,10 +101,7 @@ export default function Home() {
         data-aos-once="true"
       >
         <h2 className="text-2xl md:text-5xl text-yellow-300">How To Buy</h2>
-        {/* <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="!font-sans text-2xl font-bold dark:text-white text-white block mt-10 underline">
-          Visit our Tutorial to buy $soonak
-        </a> */}
-        <div className="w-full px-5 relative p-1 py-10 brounded-2xl flex items-center justify-center">
+        <div className="w-full mt-20 min-h-[200px] px-5 relative rounded-2xl flex items-center justify-center">
           <Image
             src={"/how.png"}
             height={0}
@@ -100,17 +110,8 @@ export default function Home() {
             alt="how to buy"
             className="rounded-xl w-full md:w-2/3 lg:w-1/2 aspect-video"
           />
-          {/* <ReactPlayer
-              controls
-              // url={'https://www.youtube.com/watch?v=To6mgsB2VPo'}
-              url={'/a.mp4'}
-              width="100%"
-              height="100%"
-              playing={true}
-              className="w-full h-full rounded-xl"
-            /> */}
           <div className="flex justify-center items-center absolute w-2/3 md:w-1/2 lg:w-1/4 aspect-[3/1] rounded-2xl bg-[#00000079] px-[2.5%] py-[2.5%]">
-            <Icon onClick={() => setShowPlayer(true)} icon="fluent:play-12-regular" className="w-1/2 h-full text-white cursor-pointer opacity-60 hover:opacity-100" />
+            <Icon onClick={() => showMovie('How to Buy', 'https://www.youtube.com/watch?v=To6mgsB2VPo')} icon="fluent:play-12-regular" className="w-1/2 h-full text-white cursor-pointer opacity-60 hover:opacity-100" />
             <a href="https://www.youtube.com/watch?v=To6mgsB2VPo" target="_blank" className="w-1/2 h-full flex items-center justify-center">
               <Icon icon="humbleicons:external-link" className="w-1/2 h-full text-white cursor-pointer opacity-60 hover:opacity-100" />
             </a>
@@ -121,68 +122,32 @@ export default function Home() {
       {
         showPlayer &&
         <div className="fixed top-0 left-0 right-0 bottom-0 flex justify-center items-center z-50">
-        <div onClick={() => setShowPlayer(false)} className="fixed top-0 left-0 right-0 bottom-0 bg-[#000000a2]"></div>
-        <div className="flex justify-center w-full">
-          <div className="relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
-            <div className="absolute right-1 top-1 -z-1 w-[200px] h-20 rounded-2xl bg-[#ec4040]"></div>
-            <div className="w-full flex flex-col rounded-2xl h-full clip bg-[#1F193E] px-6 pt-10 pb-2 rounded-tr-[55px] border-b border-white]">
-              <ReactPlayer
-                controls
-                url={'https://www.youtube.com/watch?v=To6mgsB2VPo'}
-                playing={true}
-                width='100%'
-                className="rounded-xl w-full aspect-video"
-              />
-              <h1 className="text-white text-[16px] mt-2">
-                How To Buy
-              </h1>
+          <div onClick={() => setShowPlayer(false)} className="fixed top-0 left-0 right-0 bottom-0 bg-[#000000a2]"></div>
+          <div className="flex justify-center w-full">
+            <div className="relative w-full sm:w-3/4 md:w-2/3 lg:w-1/2">
+              <div className="absolute right-1 top-1 -z-1 w-[200px] h-20 rounded-2xl bg-[#ec4040]"></div>
+              <div className="w-full flex flex-col rounded-2xl h-full clip bg-[#1F193E] px-6 pt-10 pb-2 rounded-tr-[55px] border-b border-white]">
+                <ReactPlayer
+                  controls
+                  url={movie.url}
+                  playing={true}
+                  width='100%'
+                  className="rounded-xl w-full aspect-video"
+                />
+                <h1 className="text-white text-[16px] mt-2">
+                  {movie.title}
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       }
+      
+      <PlayList onPlay={showMovie}/>
 
-      <div className="md:mt-[150px]">
+      <div className="">
         <FAQ />
       </div>
-
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 w-full text-center justify-center px-2 md:px-10 lg:px-40 items-center mt-[50px] md:mt-[150px] gap-10"
-
-        data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-delay="100"
-        data-aos-duration="700"
-        data-aos-easing="ease-in-out"
-        data-aos-once="true"
-      >
-        <div className="text-center md:text-left">
-          <h1 className="text-3xl md:text-5xl text-yellow-200">Dashboard, Yield Strategy and Analytics</h1>
-          <p className="mt-10 font-bold text-2xl md:text-4xl text-white font-rushna">Our community is building an expansive decentralized trading platform for the future of finance. Join us!</p>
-          <div className="flex gap-1 pt-2 justify-center md:justify-start">
-            <a href="https://x.com/RichySoonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="akar-icons:twitter-fill" className="text-xl sm:text-4xl" />
-            </a>
-            <a href="https://discord.gg/Vp9mR8gP" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="ri:discord-line" className="text-xl sm:text-4xl" />
-            </a>
-            <a href="https://github.com/Richy-Soonak" target="_blank" className="bg-[#FBBE25] p-5 rounded-lg flex gap-2 items-center justify-center">
-              <Icon icon="ri:github-fill" className="text-xl sm:text-4xl" />
-            </a>
-          </div>
-        </div>
-        <div className="w-full pl-0 lg:pl-40 flex justify-center">
-          <Image
-            src={'/earth.svg'}
-            width={0}
-            height={0}
-            alt="a"
-            sizes="100vw"
-            className="w-2/3 md:w-full aspect-square"
-          />
-        </div>
-      </div>
-      <div className="text-center text-white mt-[50px] text-lg sm:text-2xl py-10">Copyright © 2023 CHOPSUI. All rights reserved</div>
     </main>
   );
 }

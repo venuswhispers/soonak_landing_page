@@ -21,7 +21,9 @@
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-icon-cloud": "^4.1.4",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.0",
+    "react-youtube": "^10.1.0",
+    "swiper": "^11.1.4"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

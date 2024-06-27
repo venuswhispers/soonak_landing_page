@@ -6,6 +6,8 @@ import Provider from '@/providers';
 import "./globals.css";
 import "aos/dist/aos.css";
 import "./index.css";
+import 'swiper/css';
+import 'swiper/css/effect-cards';
 
 
 const inter = Inter({ subsets: ["latin"] });

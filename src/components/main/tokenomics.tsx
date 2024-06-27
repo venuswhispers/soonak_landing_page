@@ -8,7 +8,6 @@ const Tokenomics = () => {
 
     React.useEffect(() => {
         if (!chart.current) return;
-        const canvas = document.getElementById("donutChart");
         const ctx: CanvasRenderingContext2D = chart.current.getContext("2d") as CanvasRenderingContext2D;
         const centerX = chart.current.width / 2;
         const centerY = chart.current.height / 2;
@@ -55,7 +54,7 @@ const Tokenomics = () => {
     }, [progress]);
 
     return (
-        <section id="tokenomics" className="mt-20 mx-2 md:mx-20">
+        <section className="mt-20 mx-2 md:mx-20">
             <div className="">
                 <div className="title">
                     <h2 className="md:text-6xl text-3xl text-center text-white">TOKENOMICS</h2>
@@ -95,8 +94,9 @@ const Tokenomics = () => {
                         >
                             <ul id="legendRight">
                                 <li>
-                                    <span className="text-4xl font-extrabold font-snow text-white number">90%</span>
-                                    <span className="text-4xl font-extrabold font-snow text-white">Locked Liquidity</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white text-center number">90%</span>
+                                    <span className="text-4xl font-extrabold font-snow text-white text-center">Locked Liquidity</span>
+                                    <span onClick={() => window.open('https://app.meteora.ag/pools/EsBiDt8LKDb24ZQpfb7MWj1RCBD7ewKCjt9xEXMyMCyD', '_blank')} className="font-bold text-white text-center mt-5 font-sans text-lg break-all cursor-pointer underline">EsBiDt8LKDb...xEXMyMCyD</span>
                                 </li>
                             </ul>
                         </div>
@@ -111,9 +111,9 @@ const Tokenomics = () => {
                         data-aos-once="true"
                     >
                         <ul>
-                            <li>Symbol: SOONAK</li>
-                            <li>Supply: 1 billion</li>
-                            <li>Network: SOLANA</li>
+                            <li key='symbol'>Symbol: SOONAK</li>
+                            <li key='Supply'>Supply: 1 billion</li>
+                            <li key='Network'>Network: SOLANA</li>
                         </ul>
                     </div>
                 </div>

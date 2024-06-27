@@ -9,15 +9,15 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    title: 'WHO IS RICHY SNOOK?',
-    description: 'SNOOK is a meme coin created on and living in the Solana Ecosystem!'
+    title: 'WHO IS RICHY SOONAK?',
+    description: 'SOONAK is a meme coin created on and living in the Solana Ecosystem!'
   },
   {
     title: 'WHAT CHAIN IS APED ON?',
-    description: '$SNOOK is on the Solana Chain, a layer 1 blockchain. Learn more about solana chain here https://docs.solana.org/'
+    description: '$SOONAK is on the Solana Chain, a layer 1 blockchain. Learn more about solana chain here https://docs.solana.org/'
   },
   {
-    title: 'HOW CAN I BUY $SNOOK?',
+    title: 'HOW CAN I BUY $SOONAK?',
     description: 'Please refer to our how to buy section mentioned above.'
   },
 ]
