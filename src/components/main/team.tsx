@@ -91,7 +91,7 @@ const Roadmap = () => {
             data-aos-duration="700"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            id="roadmap"
+            id="team"
             className="mt-40 mx-2 md:mx-20"
         >
             <div className="">
@@ -100,7 +100,7 @@ const Roadmap = () => {
                 </div>
                 <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 lg:gap-20 text-white relative">
                     { _members.map((_user: ITEM, index: number) => _renderItem (_user, index + 1)) }
-                    <div className="absolute h-[90%] aspect-square left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black -z-10 rounded-full bg-gradient-to-br from-[#120F20] to-blue-400/15"></div>
+                    <div className="absolute h-[90%] aspect-square left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black -z-10 rounded-full bg-gradient-to-br from-[#B077D9] dark:from-[#120F20] dark:to-blue-400/15 to-[#9677ac]"></div>
                 </div>
             </div>
         </section>

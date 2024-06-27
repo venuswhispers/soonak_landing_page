@@ -30,9 +30,11 @@ const Header = () => {
                 />
                 <div className='hidden md:flex gap-3 lg:gap-10 justify-center items-center'>
                     <a href='#roadmap' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>ROADMP</a>
-                    <a href='#tokenomics' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>TOKENOMICS</a>
+                    <a href='#tokenomics' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>SOONAKOMICS</a>
                     <a href='#howtobuy' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>HOW TO BUY</a>
                     <a href='#joinus' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>JOIN US</a>
+                    <a href='#team' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>MEET OUR TEAM</a>
+                    <a href='#videos' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>VIDEOS</a>
                     <a href='#faq' className='text-green-800 dark:text-white text-[16px] lg:text-xl hover:dark:text-green-700 hover:text-white'>FAQ</a>
                 </div>
                 <div className='flex justify-center items-center gap-2 sm:gap-5'>
