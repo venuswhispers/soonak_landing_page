@@ -96,7 +96,7 @@ const Tokenomics = () => {
                                 <li>
                                     <span className="text-4xl font-extrabold font-snow text-white text-center number">90%</span>
                                     <span className="text-4xl font-extrabold font-snow text-white text-center">Locked Liquidity</span>
-                                    <span onClick={() => window.open('https://app.meteora.ag/pools/EsBiDt8LKDb24ZQpfb7MWj1RCBD7ewKCjt9xEXMyMCyD', '_blank')} className="font-bold text-white text-center mt-5 font-sans text-lg break-all cursor-pointer underline">EsBiDt8LKDb...xEXMyMCyD</span>
+                                    <span onClick={() => window.open('https://solscan.io/account/EsBiDt8LKDb24ZQpfb7MWj1RCBD7ewKCjt9xEXMyMCyD', '_blank')} className="font-bold text-white text-center mt-5 font-sans text-lg break-all cursor-pointer underline">EsBiDt8LKDb...xEXMyMCyD</span>
                                 </li>
                             </ul>
                         </div>

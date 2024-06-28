@@ -62,10 +62,10 @@ const Roadmap = () => {
                 <h2 className="nd:text-xl lg:text-3xl text-center">{_user.name}</h2>
                 <h2 className="md:text-[16px] lg:text-xl font-rushda opacity-50 text-center">{_user.role}</h2>
                 <div className="flex gap-2">
-                    <a href={_user.twitter} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="uil:twitter" className="text-2xl"/></a>
-                    <a href={_user.instagram} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="ri:instagram-line" className="text-2xl"/></a>
-                    <a href={_user.telegram} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="teenyicons:telegram-outline" className="text-2xl"/></a>
-                    <a href={_user.github} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="lucide:github" className="text-2xl"/></a>
+                    { _user.twitter && <a href={_user.twitter} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="uil:twitter" className="text-2xl"/></a>}
+                    { _user.instagram && <a href={_user.instagram} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="ri:instagram-line" className="text-2xl"/></a> }
+                    { _user.telegram &&  <a href={_user.telegram} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="teenyicons:telegram-outline" className="text-2xl"/></a> }
+                    { _user.github && <a href={_user.github} target="_blank" className="hover:opacity-50 cursor-pointer"><Icon icon="lucide:github" className="text-2xl"/></a> }
                 </div>
             </div>
             <div className="p-1 flex-none aspect-square rounded-full bg-[#7db9d1]">
