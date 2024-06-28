@@ -44,8 +44,8 @@ const _members: ITEM[] = [
     },
     { 
         avatar: '/avatar/navigator.png',
-        name: 'Ricardo Allan',
-        role: 'Financial navigator',
+        name: 'Financial navigator',
+        role: 'Social Media',
         twitter: '',
         telegram: '',
         instagram: 'https://www.instagram.com/financial_navigator',
